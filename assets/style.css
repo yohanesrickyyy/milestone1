@@ -50,7 +50,7 @@
   width: 1700px;
   height: 100%;
   margin: 0 auto;
-  border-radius: 10px; 
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -77,7 +77,7 @@
 }
 
 /* Trusted Store */
-.pagetwo {
+#pagetwo {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
@@ -94,7 +94,7 @@
 .table2 {
   margin-top: 20px;
   width: 600px;
-  border-radius: 10px; 
+  border-radius: 10px;
   box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -210,7 +210,6 @@ h3 {
   border-radius: 10px;
 }
 
-
 .title-about {
   text-align: center;
 }
@@ -224,31 +223,34 @@ h3 {
 }
 
 .img-about {
-  width: 300px; 
-  border-radius: 10px; 
+  width: 300px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .text-about {
-  max-width: 600px; 
+  max-width: 600px;
 }
 
 .text-about p {
   font-size: 18px;
   line-height: 1.6;
-  color: #333; 
+  color: #333;
 }
 
 /* Contact Us */
-/* CSS for Contact Us section */
 
 #contact-us {
-  padding: 50px 0;
+  padding: 50px 0 50px;
 }
-
+.p-contact{
+  padding-right: 200px;
+  font-size: 32px;
+  font-weight: bold;
+}
 .title-contact {
   text-align: center;
-  margin-bottom: 30px; /* Add spacing between title and content */
+  margin-bottom: 30px;
 }
 
 .content-contact {
@@ -260,28 +262,29 @@ h3 {
 .text-contact p {
   font-size: 18px;
   line-height: 1.6;
-  color: #555; /* Update text color */
+  color: #555;
 }
 
 .smash {
-  max-width: 300px;
-  margin-left: 20px;
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* CSS for Form */
+/* FORM*/
 
 .input-form {
-  max-width: 400px; /* Set maximum width for the form */
-  margin: 0 auto; /* Center the form horizontally */
+  max-width: 800px;
 }
 
 .form-group {
-  margin-bottom: 20px; /* Add spacing between form groups */
+  margin-bottom: 20px;
 }
 
 .form-group label {
   font-weight: bold;
-  color: #333; /* Update label color */
+  color: #333;
 }
 
 .form-control {
@@ -289,19 +292,22 @@ h3 {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  resize: vertical;
+
 }
 
 .form-control:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #555;
 }
 
 .btn-submit {
+  text-align: center;
   width: 100%;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #555;
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -309,4 +315,39 @@ h3 {
 
 .btn-submit:hover {
   background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f9fa; 
+  padding: 20px;
+  text-align: center; 
+  font-size: 12px;
+  border: none;
+}
+
+table, tbody, tr, th, td{
+  border: none;
+}
+.table {
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.table th,
+.table td {
+  padding: 10px 20px; 
+}
+
+.table th {
+  font-weight: bold; 
+}
+
+.table a {
+  color: rgb(22, 22, 22); 
+  text-decoration: none;
+}
+
+.table a:hover {
+  text-decoration: underline;
 }

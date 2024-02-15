@@ -30,10 +30,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            <a class="nav-link" href="#home-bar">Home <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Product</a>
+            <a class="nav-link" href="#pagetwo">Product</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#store-tiktok">Store</a>
@@ -42,10 +42,10 @@
             <a class="nav-link" href="./Login/login.html">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#about-us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#contact-us">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./Games/games.html">Games</a>
@@ -86,7 +86,7 @@
           class="br-bet"
         />
       </div>
-      <div class="pagetwo">
+      <div id="pagetwo">
         <div class="content">
           <h2 class="title-trusted">A trusted Club</h2>
           <p>
@@ -209,70 +209,73 @@
       </div>
       <div class="content-contact">
         <div class="text-contact">
-          <p>
-            Still have a question? Smash our customer service with a question
-          </p>
+          <div class="p-contact">
+            <p>Still have a question? Smash us with a question</p>
+          </div>
+          <img src="./assets/smash-contact.webp" alt="Smash" class="smash" />
         </div>
-        <img src="./assets/smash-contact.webp" alt="Smash" class="smash" />
-      </div>
-      <!-- FORM INPUT -->
-      <div class="input-form">
-        <div class="form-group">
-          <label for="form-name">Fullname</label>
-          <input
-            type="text"
-            class="form-control"
-            id="form-name"
-            placeholder="Enter your fullname"
-          />
-        </div>
-        <div class="form-group">
-          <label for="form-email">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="form-email"
-            placeholder="name@example.com"
-          />
-        </div>
-        <div class="form-group">
-          <label for="form-message">Your Smash</label>
-          <input
-            type="text"
-            class="form-control"
-            id="form-message"
-            placeholder="Type your message here"
-          />
+        <!-- FORM INPUT -->
+        <div class="input-form">
+          <div class="form-group">
+            <label for="form-name">Fullname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="form-name"
+              placeholder="Enter your fullname"
+            />
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="form-email"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="form-message">Your Smash</label>
+            <input
+              type="textarea"
+              class="form-control"
+              id="form-message"
+              placeholder="Type your message here"
+            />
+          </div>
+          <div class="btn-submit">Submit</div>
         </div>
       </div>
     </section>
 
     <!--! Footer -->
     <footer>
-      <table class="table">
-        <tbody>
-          <tr>
-            <th scope="row">Company</th>
-            <th>Legal</th>
-            <th>Social</th>
-          </tr>
-          <tr>
-            <td>FAQ</td>
-            <td>Term of use</td>
-            <td>Instagram</td>
-          </tr>
-          <tr>
-            <td>Blog</td>
-            <td>Privacy</td>
-            <td>Youtube</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Cookie</td>
-            <td>Facebook</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-borderless background-color">
+          <tbody>
+            <tr>
+              <th scope="row"><a href="#company">Company</a></th>
+              <th><a href="#legal">Legal</a></th>
+              <th><a href="#social">Social</a></th>
+            </tr>
+            <tr>
+              <td><a href="#faq">FAQ</a></td>
+              <td><a href="#term-of-use">Term of Use</a></td>
+              <td><a href="#instagram">Instagram</a></td>
+            </tr>
+            <tr>
+              <td><a href="#blog">Blog</a></td>
+              <td><a href="#privacy">Privacy</a></td>
+              <td><a href="#youtube">Youtube</a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="#cookie">Cookie</a></td>
+              <td><a href="#facebook">Facebook</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </footer>
 
     <link rel="stylesheet" href="script.js" />
