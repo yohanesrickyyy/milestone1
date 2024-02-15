@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+/* STORE CARD */
+#store-tiktok{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f3f8;;
+  margin: 0;
+}
+
+.card-tiktok {
+  width: 300px;
+  height: auto !important;
+  min-height: 390px !important;
+  background: #fff;
+  border-radius: 30px;
+  position: relative;
+  z-index: 10;
+  margin: 25px;
+  transition: all .25 ease;
+  box-shadow:0px 0px 0px black;
+  cursor: pointer !important;
+}
+
+.image {
+  width: calc(100% - 60px);
+  margin: 0px 30px;
+  margin-top: -90px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all .35 ease-out;
+}
+
+.blur {
+    position: absolute;
+    transform: translate(20px, 10px) scale(.85);
+    filter: blur(5px);
+    z-index: -1;
+    opacity: .35;
+    transition: all .35 ease-out;
+  }
+img {
+    height: 300px;
+  }
+
+i {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding: 15px;
+  font-size: 1.3rem;
+  color: aqua;
+}
+
+.text-tiktok{
+  padding: 20px;
+
+  & h2{
+    font-family: "Oswald", sans-serif;
+    margin: 0px;
+  }
+
+  & p {
+    font-family: "Monsterrat", sans-serif;
+    font-size: .85rem;
+    opacity: .6;
+    margin-top: 10px;
+  }
+}
+h3 {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  width: 100%; /* Take full width */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: opacity 0.3s ease; 
+  opacity: 0; 
+}
+
+.card-tiktok:hover{
+  transform: translate(0, 10px);
+  box-shadow: 0px 17px 35px 0px black;
+  
+  & .image{
+    transform: translate(0, -50px)
+    ;
+  }
+  
+  & .img.blur{
+    opacity: 5;
+    transform: translate(25px, 26px) scale(.85);
+  }
+
+  & h3 {
+    opacity: 1;
+  }
+}
+
+
