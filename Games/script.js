@@ -98,7 +98,7 @@ function update() {
     }
   }
 
-  //game over
+  //game over dan hitung score
   if (ball.x < 0) {
     player2Score++;
     resetGame(1);
