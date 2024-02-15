@@ -7,18 +7,106 @@
   font-family: "Poppins", sans-serif;
 }
 
+#navbar-menu {
+  background: rgb(22, 22, 22);
+}
+.navbar-brand {
+  padding-left: 100px;
+  font-size: larger;
+  font-weight: bolder;
+  color: whitesmoke;
+}
 
+.navbar-nav {
+  padding-left: px;
+}
 
+#navbar-menu .navbar-nav .nav-link {
+  color: whitesmoke;
+}
 
+/* Homepage */
+/* Dont be Afraid */
+.pageone {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+.img-page-one {
+  display: block;
+  width: 1700px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f8ede3;
+  font-size: 24px;
+}
+
+/* Welcome to the Club */
+#welcome-club {
+  text-align: center;
+  margin-top: 40px;
+  margin: 40px 30px 30px 30px;
+}
+
+.br-bet {
+  width: 130px;
+  height: 100px;
+  justify-content: center;
+}
+
+/* Trusted Store */
+.pagetwo {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  text-align: justify;
+  margin-left: 100px;
+}
+
+.jadwal {
+  font-weight: bold;
+  margin-left: 100px;
+}
+
+.table2 {
+  margin-top: 20px;
+  width: 600px;
+}
+
+.br-bets {
+  width: 130px;
+  height: 100px;
+  margin-left: 400px;
+}
 
 /* STORE CARD */
-#store-tiktok{
+#store-tiktok {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f2f3f8;;
+  background: #f2f3f8;
   margin: 0;
 }
 
@@ -31,8 +119,8 @@
   position: relative;
   z-index: 10;
   margin: 25px;
-  transition: all .25 ease;
-  box-shadow:0px 0px 0px black;
+  transition: all 0.25 ease;
+  box-shadow: 0px 0px 0px black;
   cursor: pointer !important;
   background: url(./bg-store.jpg);
 }
@@ -44,20 +132,20 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
-  transition: all .35 ease-out;
+  transition: all 0.35 ease-out;
 }
 
 .blur {
-    position: absolute;
-    transform: translate(20px, 10px) scale(.85);
-    filter: blur(5px);
-    z-index: -1;
-    opacity: .35;
-    transition: all .35 ease-out;
-  }
+  position: absolute;
+  transform: translate(20px, 10px) scale(0.85);
+  filter: blur(5px);
+  z-index: -1;
+  opacity: 0.35;
+  transition: all 0.35 ease-out;
+}
 img {
-    height: 300px;
-  }
+  height: 300px;
+}
 
 i {
   position: absolute;
@@ -68,17 +156,17 @@ i {
   color: aqua;
 }
 
-.text-tiktok{
+.text-tiktok {
   padding: 20px;
-  & h2{
+  & h2 {
     font-family: "Oswald", sans-serif;
     margin: 0px;
   }
 
   & p {
     font-family: "Monsterrat", sans-serif;
-    font-size: .85rem;
-    opacity: .6;
+    font-size: 0.85rem;
+    opacity: 0.6;
     margin-top: 10px;
   }
 }
@@ -88,27 +176,24 @@ h3 {
   left: 0;
   width: 100%; /* Take full width */
   padding: 20px;
-  transition: opacity 0.3s ease; 
-  opacity: 0; 
+  transition: opacity 0.3s ease;
+  opacity: 0;
 }
 
-.card-tiktok:hover{
+.card-tiktok:hover {
   transform: translate(0, 10px);
   box-shadow: 0px 17px 35px 0px black;
-  
-  & .image{
-    transform: translate(0, -50px)
-    ;
+
+  & .image {
+    transform: translate(0, -50px);
   }
-  
-  & .img.blur{
+
+  & .img.blur {
     opacity: 5;
-    transform: translate(25px, 26px) scale(.85);
+    transform: translate(25px, 26px) scale(0.85);
   }
 
   & h3 {
     opacity: 1;
   }
 }
-
-
