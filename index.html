@@ -12,8 +12,10 @@
   </head>
   <body>
     <!--! Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Ping Pong FC</a>
+    <nav class="navbar navbar-expand-lg" id="navbar-menu">
+      <a class="navbar-brand" href="#" style="color: whitesmoke"
+        >Ping Pong FC</a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -28,22 +30,22 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            <a class="nav-link" href="#home-bar">Home <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Product</a>
+            <a class="nav-link" href="#pagetwo">Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
+            <a class="nav-link" href="#store-tiktok">Store</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./Login/login.html">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#about-us">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#contact-us">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./Games/games.html">Games</a>
@@ -55,44 +57,58 @@
     <!--! Home-->
     <section id="home-bar">
       <div class="pageone">
-        <h1>Don't be afraid to risk <br />Lets's Play</h1>
-        <img
-          src="https://i.pinimg.com/564x/3e/28/58/3e2858295bd1e922d43e35c8756d9fcf.jpg"
-          alt="Ping pong table"
-          class="img-page-one"
-        />
+        <div class="centered">
+          <div class="image-container">
+            <img
+              src="./assets/pageone.jpeg"
+              alt="Ping pong table"
+              class="img-page-one"
+            />
+            <div class="overlay-text">
+              <h1>Don't be afraid to risk <br />Let's Play</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="welcome-club">
         <h2 class="welcome">Welcome to the club</h2>
         <p>
           Nothing is impossible, but to develop a good player, you need the
-          player to be hardworking, have to be supportive!
+          player to be hardworking, have to be supportive! Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Dolor magni eaque pariatur amet
+          molestiae nisi vero ab omnis modi, incidunt atque maxime, nesciunt
+          libero praesentium. Cumque nisi inventore nesciunt. Dolore praesentium
+          quos corrupti voluptatum minima! Amet odio maiores veniam cupiditate!
         </p>
         <img
           src="./assets/png-transparent-ping-pong-paddles-sets-racket-ping-pong-logo-table-tennis-racket-sports-equipment-removebg-preview.png"
           alt="Ping pong bet"
-          class="br bet"
+          class="br-bet"
         />
       </div>
-      <div class="pagetwo">
-        <h2>A trusted Club</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-          possimus, at quibusdam qui saepe modi porro. Asperiores harum ipsa
-          enim pariatur quas iusto a in adipisci perferendis, accusamus
-          inventore sit.
-        </p>
+      <div id="pagetwo">
+        <div class="content">
+          <h2 class="title-trusted">A trusted Club</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            possimus, at quibusdam qui saepe modi porro. Asperiores harum ipsa
+            enim pariatur quas iusto a in adipisci perferendis, accusamus
+            inventore sit.
+          </p>
+        </div>
         <p class="jadwal">Open everyday at: <br />09.00 to 23.00 WIB</p>
+        <img src="./assets/table tennis.jpg" alt="Ping Pong" class="table2" />
         <img
           src="./assets/png-transparent-ping-pong-paddles-sets-racket-ping-pong-logo-table-tennis-racket-sports-equipment-removebg-preview.png"
           alt="Ping pong bet"
-          class="br bet"
+          class="br-bets"
         />
       </div>
     </section>
 
     <!--! STORE -->
     <section id="store-tiktok">
-      <div class="pagethree">
-      </div>
+      <div class="pagethree"></div>
 
       <!--? Product 1 -->
       <div class="card-tiktok">
@@ -119,7 +135,7 @@
           <img class="blur" src="./assets//meja pingpong.jpg" />
         </div>
         <div class="text-tiktok">
-          <h2>Modern Ping Pong Table</h2>
+          <h2>Modern Table</h2>
           <h3>Rp. 2.500.000</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
@@ -144,9 +160,124 @@
           </p>
         </div>
       </div>
+
+      <!--? Product 4 -->
+      <div class="card-tiktok">
+        <i class="fa-regular fa-heart"></i>
+        <div class="image">
+          <img src="./assets/sewa meja.jpg" />
+          <img class="blur" src="./assets//sewa meja.jpg" />
+        </div>
+        <div class="text-tiktok">
+          <h2>Rent Place</h2>
+          <h3>Rp. 100.000/hour</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+            vitae?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--! About Us -->
+    <section id="about-us">
+      <div class="container-about">
+        <div class="title-about">
+          <h2 class="title-about">About Us</h2>
+        </div>
+        <div class="content-about">
+          <img src="./assets/about-us.jpg" alt="Ma Long" class="img-about" />
+          <p class="text-about">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo
+            accusantium, quia repudiandae mollitia necessitatibus odio autem
+            corrupti suscipit aliquid dolor. Commodi, expedita vitae. Aperiam
+            quod eos tempore eaque dolores, ad obcaecati, enim quo perferendis,
+            doloremque doloribus. Iusto nisi at repudiandae? Aperiam
+            reprehenderit harum iure at impedit suscipit vero tempora vitae!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
+            facilis id expedita autem ex esse doloremque, dolores tenetur
+            nostrum, minima
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--! Contact Us -->
+    <section id="contact-us">
+      <div class="title-contact">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="content-contact">
+        <div class="text-contact">
+          <div class="p-contact">
+            <p>Still have a question? Smash us with a question</p>
+          </div>
+          <img src="./assets/smash-contact.webp" alt="Smash" class="smash" />
+        </div>
+        <!-- FORM INPUT -->
+        <div class="input-form">
+          <div class="form-group">
+            <label for="form-name">Fullname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="form-name"
+              placeholder="Enter your fullname"
+            />
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="form-email"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="form-message">Your Smash</label>
+            <input
+              type="textarea"
+              class="form-control"
+              id="form-message"
+              placeholder="Type your message here"
+            />
+          </div>
+          <div class="btn-submit">Submit</div>
+        </div>
+      </div>
     </section>
 
     <!--! Footer -->
+    <footer>
+      <div class="table-responsive">
+        <table class="table table-borderless background-color">
+          <tbody>
+            <tr>
+              <th scope="row"><a href="#company">Company</a></th>
+              <th><a href="#legal">Legal</a></th>
+              <th><a href="#social">Social</a></th>
+            </tr>
+            <tr>
+              <td><a href="#faq">FAQ</a></td>
+              <td><a href="#term-of-use">Term of Use</a></td>
+              <td><a href="#instagram">Instagram</a></td>
+            </tr>
+            <tr>
+              <td><a href="#blog">Blog</a></td>
+              <td><a href="#privacy">Privacy</a></td>
+              <td><a href="#youtube">Youtube</a></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><a href="#cookie">Cookie</a></td>
+              <td><a href="#facebook">Facebook</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </footer>
+
     <link rel="stylesheet" href="script.js" />
   </body>
 </html>

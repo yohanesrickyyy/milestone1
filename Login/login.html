@@ -9,12 +9,11 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
   </head>
   <body>
-    <!--! Login Form -->
     <div class="container">
       <div class="signup-section">
+        <!--! SIGN UP Form -->
         <header>Signup</header>
 
         <div class="social-buttons">
@@ -28,15 +27,36 @@
           <div class="line"></div>
         </div>
 
-        <form>
-          <input type="text" placeholder="Full name" required />
-          <input type="email" placeholder="Email address" required />
-          <input type="password" placeholder="Password" required />
+        <form method="POST" action="form.php">
+          <input
+            type="text"
+            placeholder="Full name"
+            name="fname-su"
+            required
+            id="fname-su"
+          />
+          <input
+            type="email"
+            placeholder="Email address"
+            name="email-su"
+            id="email-su"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="pw-su"
+            id="pw-su"
+            required
+          />
           <a href="#">Forget Password?</a>
-          <button type="submit" class="btn">Signup</button>
+          <button type="submit" class="btn" name="submit-su" id="submit-su">
+            Signup
+          </button>
         </form>
       </div>
 
+      <!--! LOGIN FORM -->
       <div class="login-section">
         <header>Login</header>
 
@@ -51,11 +71,25 @@
           <div class="line"></div>
         </div>
 
-        <form>
-          <input type="email" placeholder="Email address" required />
-          <input type="password" placeholder="Password" required />
+        <form method="POST" action="form.php">
+          <input
+            type="email"
+            placeholder="Email address"
+            name="email-lo"
+            id="email-lo"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="pw-lo"
+            id="pw-lo"
+            required
+          />
           <a href="#">Forget Password?</a>
-          <button type="submit" class="btn">Login</button>
+          <button type="submit" class="btn" name="submit-lo" id="submit-lo">
+            Login
+          </button>
         </form>
       </div>
     </div>
