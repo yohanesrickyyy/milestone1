@@ -34,6 +34,7 @@
   transition: all .25 ease;
   box-shadow:0px 0px 0px black;
   cursor: pointer !important;
+  background: url(./bg-store.jpg);
 }
 
 .image {
@@ -69,7 +70,6 @@ i {
 
 .text-tiktok{
   padding: 20px;
-
   & h2{
     font-family: "Oswald", sans-serif;
     margin: 0px;
@@ -88,7 +88,6 @@ h3 {
   left: 0;
   width: 100%; /* Take full width */
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
   transition: opacity 0.3s ease; 
   opacity: 0; 
 }
